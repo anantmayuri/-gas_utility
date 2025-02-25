@@ -16,3 +16,7 @@ def service_request_create(request):
         form = ServiceRequestForm()
 
     return render(request, 'service_requests/create.html', {'form': form})
+
+
+def homepage(request):
+    return redirect('service_request_create')  # Redirect to request submission page
