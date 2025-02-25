@@ -1,7 +1,7 @@
-from django.urls import path
-from .views import service_request_list, service_request_create
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('', service_request_list, name='service_requests_list'),
-    path('new/', service_request_create, name='service_request_create'),  # New URL for form
+    path('admin/', admin.site.urls),
+    path('requests/', include('service_requests.urls')),
 ]
