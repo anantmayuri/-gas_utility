@@ -56,8 +56,8 @@ ROOT_URLCONF = 'gas_utility.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [],  # If empty, Django only looks in app-specific `templates/`
+        'APP_DIRS': True,  # Enables Django to find templates inside apps
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -68,7 +68,7 @@ TEMPLATES = [
         },
     },
 ]
-
+If 'APP_DIRS': 
 WSGI_APPLICATION = 'gas_utility.wsgi.application'
 
 
