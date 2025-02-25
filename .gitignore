@@ -1,1 +1,14 @@
-myworld/ 
+# Ignore virtual environments
+myworld/
+venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore database
+*.sqlite3
+
+# Ignore VS Code settings
+.vscode/
