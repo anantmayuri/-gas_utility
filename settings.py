@@ -68,7 +68,7 @@ TEMPLATES = [
         },
     },
 ]
-If 'APP_DIRS': 
+
 WSGI_APPLICATION = 'gas_utility.wsgi.application'
 
 
